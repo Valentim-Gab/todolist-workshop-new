@@ -1,0 +1,21 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/todolist
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoidXNlcjAxIiwicm9sZSI6WyJ1c2VyIl0sImlhdCI6MTcyNzEyNTM4MSwiZXhwIjoxNzI3MTI3MTgxfQ.AInJVrFfrCIdTH2zfUQtJuQb-87HheQAxLcuezy9-sM
+}
+
+body:json {
+  {
+    "name_task": "Nova task 2"
+  }
+}

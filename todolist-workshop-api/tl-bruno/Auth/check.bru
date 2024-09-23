@@ -1,0 +1,15 @@
+meta {
+  name: check
+  type: http
+  seq: 3
+}
+
+head {
+  url: http://localhost:3000/check
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInJvbGUiOlsidXNlciJdLCJpYXQiOjE3MjcxMjQ2MDAsImV4cCI6MTcyNzEyNjQwMH0.UrhJH25kdJZBuuR__zT1xflXqDLYFGlU0Dc4zJmckFE
+}

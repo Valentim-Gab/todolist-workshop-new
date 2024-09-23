@@ -1,0 +1,85 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./breakpoints.scss";
+@import "./themes.scss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "Oxanium";
+  src:
+    local("Oxanium"),
+    url(@/assets/fonts/Oxanium/static/Oxanium-Regular.ttf) format("truetype"),
+    url(@/assets/fonts/Oxanium/static/Oxanium-Bold.ttf) format("truetype"),
+    url(@/assets/fonts/Oxanium/static/Oxanium-ExtraBold.ttf) format("truetype"),
+    url(@/assets/fonts/Oxanium/static/Oxanium-ExtraLight.ttf) format("truetype"),
+    url(@/assets/fonts/Oxanium/static/Oxanium-Light.ttf) format("truetype"),
+    url(@/assets/fonts/Oxanium/static/Oxanium-Medium.ttf) format("truetype"),
+    url(@/assets/fonts/Oxanium/static/Oxanium-SemiBold.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Oxanium", "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+html,
+body {
+  @apply min-h-screen;
+}
+
+body {
+  @apply min-h-screen bg-background text-foreground text-sm;
+
+  .main-container {
+    @apply min-h-screen flex flex-col items-center flex-nowrap;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    line-height: normal;
+  }
+
+  &.swal2-shown {
+    padding-right: 0 !important;
+  }
+
+  .swal2-html-container {
+    text-align: center;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 7px;
+  background: rgb(202, 202, 202);
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 7px;
+  background: rgb(202, 202, 202);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  border-radius: 5px;
+}

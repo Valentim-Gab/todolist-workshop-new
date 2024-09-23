@@ -1,0 +1,15 @@
+meta {
+  name: GetAll
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:3000/todolist
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoidXNlcjAxIiwicm9sZSI6WyJ1c2VyIl0sImlhdCI6MTcyNzEyOTE0OSwiZXhwIjoxNzI3MTMwOTQ5fQ.ns6aR_3I0cJTFGEzrXBwJccASk8McBhKdtMe6LYktMw
+}

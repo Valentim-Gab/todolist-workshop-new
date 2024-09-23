@@ -1,0 +1,36 @@
+// Mantenha o padrão :root no CSS e depois transfira-o para o SCSS. Assim, ao utilizar Tailwind ou Quasar, os valores permanecerão consistentes.
+
+// Pode utilizar tanto por variáveis CSS quanto por variáveis SCSS
+// tailwind.config.ts está configurado com os mesmos valores
+
+:root {
+  --primary: #ca0005;
+  --secondary: #111;
+  --background: #ddd;
+  --foreground: #000;
+  --card: #fff;
+  --accent: #800080;
+  --accent-orange: #ea9616;
+  --dark: #424242;
+  --dark-light: #8d8989;
+  --positive: #4b924d;
+  --negative: #ff7070;
+  --warning: #ea9616;
+  --info: #0482ba;
+  --muted: #4b5563;
+}
+
+$primary: var(--primary);
+$secondary: var(--secondary);
+$background: var(--background);
+$foreground: var(--foreground);
+$card: var(--card);
+$accent: var(--accent);
+$accent-orange: var(--accent-orange);
+$dark: var(--dark);
+$dark-light: var(--dark-light);
+$positive: var(--positive);
+$negative: var(--negative);
+$warning: var(--warning);
+$info: var(--info);
+$muted: var(--muted);

@@ -1,0 +1,50 @@
+body.body--dark {
+  --foreground: #fff;
+  --card: #222;
+  --muted: #ccc;
+  --q-dark: #222;
+}
+
+body.body--high-contrast {
+  --background: #000 !important;
+  --q-dark-page: #000 !important;
+  --foreground: #fff !important;
+  --card: #000 !important;
+  --muted: #fff !important;
+
+  .high-contrast,
+  button,
+  .q-card,
+  .q-menu,
+  .q-field--outlined .q-field__control::before {
+    background-color: #000 !important;
+    border: 2px solid #fff !important;
+  }
+
+  input {
+    color: #fff !important;
+  }
+
+  .q-field__label {
+    color: #fff !important;
+  }
+
+  header {
+    border-bottom: 2px solid #fff !important;
+  }
+
+  footer {
+    border-top: 2px solid #fff !important;
+  }
+
+  .q-hoverable:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+    font-weight: bold !important;
+  }
+
+  a {
+    font-weight: bold !important;
+    letter-spacing: 0.1rem;
+  }
+}

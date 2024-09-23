@@ -1,0 +1,23 @@
+meta {
+  name: Update
+  type: http
+  seq: 3
+}
+
+patch {
+  url: http://localhost:3000/user/@me
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjMsInVzZXJuYW1lIjoidXNlcjAyIiwicm9sZSI6WyJ1c2VyIl0sImlhdCI6MTcyNzEyMjgyOCwiZXhwIjoxNzI3MTI0NjI4fQ.694jtHN_oSnqFrCcnGLDb7878y-nRLuvk_9Oeei9Fvg
+}
+
+body:json {
+  {
+    "name": "User 02 edt",
+    "login": "user02b",
+    "password": "1234"
+  }
+}

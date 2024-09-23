@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  todo-list-web:
+    build: ./todo-list-web
+    container_name: todo-list-web
+    ports:
+      - "9001:9000"
+    depends_on:
+      - todolist-workshop-api
+    networks:
+      - todolist-workshop
+
+  todolist-workshop-api:
+    build: ./todolist-workshop-api
+    container_name: todolist-workshop-api
+    environment:
+      SECRET: # Change this to secret_key
+      SECRET_REFRESH: # Change this to secret
+    ports:
+      - "3004:3000"
+    depends_on:
+      - todolist-db
+    networks:
+      - todolist-workshop
+
+  todolist-db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: # Change this to your user
+      POSTGRES_PASSWORD: # Change this to your password
+      POSTGRES_DB: # Change this to your database
+    ports:
+      - 5437:5432
+    networks:
+      - todolist-workshop
+
+networks:
+  todolist-workshop:
+    driver: bridge
