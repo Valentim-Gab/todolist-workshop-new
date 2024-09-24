@@ -25,3 +25,4 @@ Using {
     - Oracle Cloud {
       VM Ubuntu
     }
+}
