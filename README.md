@@ -1,5 +1,5 @@
 # Todolist Workshop New
-## Projeto do Workshop sobre Vue.js 3 e Quasar Framework que eu ministrei, porém totalmente modificado por razões legais.
+Projeto do Workshop sobre Vue.js 3 e Quasar Framework que eu ministrei, porém totalmente modificado por razões legais.
 
 ```bash
 Using {
