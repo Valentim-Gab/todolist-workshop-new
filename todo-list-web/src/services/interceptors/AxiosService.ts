@@ -47,11 +47,15 @@ instance.interceptors.response.use(
         manterConectado === true
       ) {
         await refreshToken({ token: refToken }).then((resp) => {
-          const { accessToken, refreshToken } = resp.data
+          const loginData = resp.data
+
+          if (!loginData.tokens) {
+            return false
+          }
 
           saveLoginDataStorage({
-            token: accessToken,
-            refreshToken,
+            token: loginData.tokens.access_token,
+            refreshToken: loginData.tokens.refresh_token,
           })
         })
 
