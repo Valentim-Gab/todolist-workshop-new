@@ -2,6 +2,8 @@ FROM node:18-alpine
 
 WORKDIR /app
 
+ARG API_URL=$API_URL
+
 COPY . .
 
 RUN npm install
