@@ -7,7 +7,7 @@ Projeto do Workshop sobre Vue.js 3 e Quasar Framework que eu ministrei, porém t
 Login: convidado
 Senha: convidadosenha
 
-<br />
+###
 
 ```bash
 Using {
