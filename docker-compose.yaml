@@ -19,9 +19,9 @@ services:
     build: ./todolist-workshop-api
     container_name: todolist-workshop-api
     environment:
-      DATABASE_URL: # DATABASE_URL
-      SECRET: # SECRET
-      SECRET_REFRESH: # SECRET_REFRESH
+      DATABASE_URL: ${DATABASE_URL}
+      SECRET: ${SECRET}
+      SECRET_REFRESH: ${SECRET_REFRESH}
     ports:
       - "3004:3000"
     depends_on:
@@ -32,9 +32,9 @@ services:
   todolist-db:
     image: postgres:latest
     environment:
-      POSTGRES_USER: # POSTGRES_USER
-      POSTGRES_PASSWORD: # POSTGRES_PASSWORD
-      POSTGRES_DB: # POSTGRES_DB
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
     ports:
       - 5437:5432
     networks:
