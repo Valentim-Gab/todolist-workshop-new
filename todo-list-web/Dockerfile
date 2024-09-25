@@ -2,14 +2,9 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-COPY package*.json ./
-
-RUN npm install
-
 COPY . .
 
-# Example
-RUN echo "API_URL=http://localhost:3004" > .env
+RUN npm install
 
 RUN npm run build
 
